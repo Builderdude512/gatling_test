@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>gat_text</SubtypeId>
+            </Id>
+            <ProjectileAmmoData RateOfFire="700" ShootSoundName="WepGatlingTurretShot" ShotsInBurst="140" />
+            <ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+            <DeviateShotAngle>0.3</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.3</DeviateShotAngleAiming>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan><Effects>
+                <Effect Action="Shoot" Dummy="muzzle_projectile_1" Particle="Muzzle_Flash_Large" Loop="true" InstantStop="true" OffsetX="0" OffsetY="0" OffsetZ="-1.9"  />
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="NATO_25x184mm" />
+            </AmmoMagazines>
+            <ReloadTime>4000</ReloadTime>
+        </Weapon>
+    </Weapons>
+</Definitions>

@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeGatlingTurret</TypeId>
+				<SubtypeId>gat_text</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_gat_text}</DisplayName>
+			<Description>{LOC:Description_gat_text}</Description>
+			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\gat_text.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10"/>
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<BlockPairName>gat_text</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>30</BuildTimeSeconds>
+            <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+            <WeaponDefinitionId Subtype="LargeGatlingTurret" />
+            <HiddenTargetingOptions>Friends</HiddenTargetingOptions>
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <MinElevationDegrees>-43</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <RotationSpeed>0.0015</RotationSpeed>
+            <ElevationSpeed>0.0015 </ElevationSpeed>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>800</MaxRangeMeters>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>225</PCU>
+            <IsAirTight>false</IsAirTight>
+            <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+            <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+            <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+            <TieredUpdateTimes>
+                <unsignedInt>10</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
+            <TargetingGroups>
+                <string>Weapons</string>
+            </TargetingGroups>
+            <UpCameraOffset>0</UpCameraOffset>
+            <ForwardCameraOffset>3.5</ForwardCameraOffset>
+		</Definition>
+	</CubeBlocks>
+</Definitions>
